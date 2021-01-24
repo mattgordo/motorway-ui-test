@@ -5,17 +5,17 @@ import './card-info.scss';
 
 const CardInfo = ({ user, description, likes, theme }) => {
 
-  if (!user?.username) {
-    return null;
-  }
+	if (!user?.username) {
+		return null;
+	}
 
-  const { username } = user;
+	const { username } = user;
 
-  return <div className={`card-info card-${theme}`}>
-    {/* {description && <p className="description">{description}</p>} */}
-    <p className="user">By: {username}</p>
-    {likes && <p className="likes">{likes}</p>}
-  </div>;
+	return <div className={`card-info card-${theme}`}>
+		{/* {description && <p className="description">{description}</p>} */}
+		<p className="user">By: {username}</p>
+		{likes && <p className="likes">{likes}</p>}
+	</div>;
 };
 
 CardInfo.propTypes = {

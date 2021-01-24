@@ -5,13 +5,15 @@ import './card-image.scss';
 
 const CardImage = ({ src, alt, theme }) => {
 
-  if (!src) {
-    return null;
-  }
+	if (!src) {
+		return null;
+	}
 
-  return <div className={`card-image-container card-${theme}`}>
-    <img className="card-image" src={src} alt={alt} />
-  </div>;
+	return <div className={`card-image-container card-${theme}`}>
+		<a href={`${src}.jpg`} title="See full image" target="_blank">
+			<img className="card-image" src={src} alt={alt} />
+		</a>
+	</div>;
 };
 
 CardImage.defaultProps = {
