@@ -1,0 +1,19 @@
+.card {
+    height: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px -5px black;
+
+    div + div {
+        margin-top: 10px;
+    }
+
+    &.card-light {
+        background-color: #fef200;
+    }
+
+    &.card-dark {
+        background-color: #1d1d1b;
+    }
+}
