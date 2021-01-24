@@ -1,9 +1,30 @@
 .card-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 14px;
+
     &.card-light {
         color: #1d1d1b;
     }
 
     &.card-dark {
-        color:white;
+        color: white;
+    }
+}
+
+.user {
+    flex: 1 0 75%;
+}
+
+.likes {
+    flex: 0 0 25%;
+    text-align: right;
+
+    &:before {
+        content: '❤';
+        display: inline-block;
+        margin-right: 4px;
+        color: #f88379;
     }
 }

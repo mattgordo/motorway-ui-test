@@ -15,8 +15,8 @@ const Card = ({ info, idx }) => {
   const theme = (idx + 1) % 2 === 0 ? 'light' : 'dark';
 
   return <article className={`card card-${theme}`}>
-    <CardImage src={info.url} alt={info.alt_description} />
-    <CardInfo user={info.user} description={info.description} theme={theme} />
+    <CardImage src={info.url} alt={info.alt_description} theme={theme} />
+    <CardInfo user={info.user} description={info.description} likes={info.likes} theme={theme} />
   </article>;
 };
 

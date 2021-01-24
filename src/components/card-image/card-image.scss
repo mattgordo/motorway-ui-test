@@ -1,5 +1,13 @@
 .card-image-container {
     height: 200px;
+
+    &.card-light {
+        border: 1px solid #1d1d1b;
+    }
+
+    &.card-dark {
+        border: 1px solid white;
+    }
 }
 
 .card-image {

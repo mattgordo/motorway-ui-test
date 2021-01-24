@@ -3,13 +3,13 @@ import React from 'react';
 
 import './card-image.scss';
 
-const CardImage = ({ src, alt }) => {
+const CardImage = ({ src, alt, theme }) => {
 
   if (!src) {
     return null;
   }
 
-  return <div className="card-image-container">
+  return <div className={`card-image-container card-${theme}`}>
     <img className="card-image" src={src} alt={alt} />
   </div>;
 };
@@ -20,7 +20,8 @@ CardImage.defaultProps = {
 
 CardImage.propTypes = {
   src: PropTypes.string,
-  alt: PropTypes.string
+  alt: PropTypes.string,
+  theme: PropTypes.string
 }
 
 export default CardImage;
