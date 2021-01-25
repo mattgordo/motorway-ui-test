@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 .card-info {
     display: flex;
     flex-direction: row;
@@ -5,7 +7,7 @@
     font-size: 14px;
 
     &.card-light {
-        color: #1d1d1b;
+        color: $theme-black;
     }
 
     &.card-dark {
@@ -24,7 +26,7 @@
     &:before {
         content: '❤';
         display: inline-block;
-        margin-right: 4px;
-        color: #f88379;
+        margin-right: $small;
+        color: $theme-red;
     }
 }

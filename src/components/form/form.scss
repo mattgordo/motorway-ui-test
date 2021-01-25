@@ -1,0 +1,55 @@
+@import '../../styles.scss';
+
+%_default-input-style {
+    padding: $medium;
+    border: 1px solid $theme-black;
+    border-radius: $radius;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: $medium $large;
+    border-radius: $radius;
+    background-color: $theme-black;
+
+    .form-field {
+        flex: 0;
+        margin: $small 0;
+    }
+
+    label {
+        margin-right: $medium;
+        color: white;
+    }
+
+    .text-input {
+        @extend %_default-input-style;
+
+        &.error {
+            border-color: $theme-red;
+        }
+    }
+
+    .date-input {
+        @extend %_default-input-style;
+        padding: 5px $medium;
+        font-family: Helvetica, Arial, sans-serif;
+
+        &.error {
+            border-color: $theme-red;
+        }
+    }
+
+    .submit {
+        padding: $medium $large;
+        border: 0;
+        border-radius: $radius;
+        background-color: $theme-blue;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}

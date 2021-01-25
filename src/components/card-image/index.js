@@ -10,7 +10,7 @@ const CardImage = ({ src, alt, theme }) => {
 	}
 
 	return <div className={`card-image-container card-${theme}`}>
-		<a href={`${src}.jpg`} title="See full image" target="_blank">
+		<a href={`${src}.jpg`} title="See full image" target="_blank" rel="noreferrer">
 			<img className="card-image" src={src} alt={alt} />
 		</a>
 	</div>;
