@@ -17,6 +17,8 @@ const App = () => {
 		.then(data => {
 			endTime = window.performance.now()
 			setImages(data);
+
+			// Check performance of API (I Hope)
 			console.log(`${(endTime - startTime) / 1000} Seconds`);
 		})
 		.catch(error => {
@@ -29,6 +31,7 @@ const App = () => {
 	</li>);
 
 	return <div className="container">
+		<h1 className="title">Motorway UI Test</h1>
 		<section className="form-container">
 			<Form />
 		</section>

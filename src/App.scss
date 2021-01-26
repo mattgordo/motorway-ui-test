@@ -1,5 +1,13 @@
 @import './styles.scss';
 
+.title {
+    display: block;
+    padding: $large;
+    text-align: center;
+    font-size: 48px;
+    color: $theme-black;
+}
+
 .cards {
     padding: $large;
 
